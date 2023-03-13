@@ -5,8 +5,8 @@ import router from "../router";
 
 export const useDrinkStore = defineStore('drink', () => {
     const drinks = ref([])
-    // const url = import.meta.env.BASE_URL
-    const url = 'http://localhost:7000/api/v1'
+    const url = import.meta.env.VITE_API_URL
+    // const url = 'http://localhost:7000/api/v1'
     
     const getDrinks = async() => {
         try {
